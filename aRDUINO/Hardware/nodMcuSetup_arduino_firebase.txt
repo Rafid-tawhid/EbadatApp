@@ -1,0 +1,35 @@
+arduino(IDE) and nodMCU=>Firebase :Setup
+...................................................................................................
+
+
+*)add board manager:
+Go: (file->prefference-> additional board manager URLs 
+Put: http://arduino.esp8266.com/stable/package_esp8266com_index.json ->ok
+
+*)instal board manager:
+->tools->board->board manager->search esp8266[by esp community]->install
+
+*)add firebase library:
+->download->[https://github.com/FirebaseExtended/firebase-arduino] ->paste(documents->arduino->libraries)
+
+*)add json library:
+->Go: Sketch->include library->Manage libraries
+ -> search->JSON[arduino json by Benoit Blanchon-5.13.2(version-required)]
+->install
+
+*)change own firebase fingerprint from firebase-arduino library:
+ change:
+ ->FirebaseHttpClient.h(change own fingerprint).
+-> based on firebase project host name create own fingerprint: example,
+->create fingerprint: (https://www.grc.com/fingerprints.htm)->[https://xxxxxxx.firebaseio.com]
+->scroll down FirebaseHttpClient.h file and  replace your firebase fingerprint without ‘:’ 
+
+
+###Before compile,obviously ensure that:
+=>Board Manager: NodeMCU 1.0(ESP-12E module)
+=>Port: COM….
+
+
+
+
+Note:Without Board manager as a esp8266 , firebase will not work

@@ -1,0 +1,4 @@
+Board: LOLIN(WEMOS) D1 R2 & mini
+Upload Speed: 921600
+Cpu frequency: 80 Mhz
+Flash size: 4mb(FS:2mb~1019kb)

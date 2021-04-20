@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet"> 
+
+    <!-- Initialize Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="css/patient.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+</head>
+<body>
+
+  <div id="logo" class="col-xs-5 header-logo">
+
+    <a href="index.html">
+      <div class="img-responsive logo">
+        <img src="images/iconM.png" width="35" height="35" alt="" style="margin-bottom: 10px;">
+
+        <span style="color: #1FBFA9;font-weight: bolder;font-size: 28px">Medi</span>
+        <span style="color: black;font-weight: bolder;font-size: 28px;margin-left: -3px;">Tech</span>
+
+
+    </div>
+</a>
+</div>
+
+<div class="toolbar">
+    <img id="back" src="images/back.png"/>
+    <div id="top">
+        <div id="p_id">
+            <span>Patient Id: </span><span id="patient_id"></span>
+        </div>
+        <div id="date">
+            <span>Last update: </span><span id="last_update"></span>
+        </div>
+    </div>
+
+</div>
+<div class="tabContainer">
+    <div class="buttonContainer">
+        <button class="btn" onclick="showPanel(0,'#1FBFA9')"><i class="fa fa-heartbeat"></i><br /> Health</button>
+        <button class="btn" onclick="showPanel(1,'#1FBFA9')"><i class="glyphicon glyphicon-file"></i><br /> Reports</button>
+        <button class="btn" onclick="showPanel(2,'#1FBFA9')"><i class="glyphicon glyphicon-file"></i><br /> Prescriptions</button>
+        <button class="btn" onclick="showPanel(3,'#1FBFA9')"><i class="fa fa-user"></i><br /> Profile</button>
+        <!--  <button onclick="showPanel(0,'#4caf50')">Health</button> -->
+
+    </div>
+
+    <!--Health Tab-->
+    <div class="tabPanel">
+        <!--progress bar during load-->
+        <div class = "progress1">
+            <img src = "images/ajax-loader.gif" width="25px" height="25px" alt="Loading..."/>
+        </div>
+        <div id="health_list"></div>
+        <br /><br />
+    </div>
+
+    <!--Document Tab-->
+    <div class="tabPanel">
+        <!--progress bar during load-->
+        <div class = "progress2">
+            <img src = "images/ajax-loader.gif" width="25px" height="25px" alt="Loading..."/>
+        </div>
+        <div id="document_list"></div>
+        <br /><br />
+    </div>
+
+
+    <!--Prescription Tab-->
+    <div class="tabPanel">
+        <!--progress bar during load-->
+        <div class = "progress2">
+            <img src = "images/ajax-loader.gif" width="25px" height="25px" alt="Loading..."/>
+        </div>
+        <div id="prescription_list"></div>
+        <br /><br />
+    </div>
+    
+    
+    
+    
+    
+    <!--Profile Tab-->
+    <div class="tabPanel">
+        
+        
+        
+        <div class="card" id="field">
+            <div class="card-body">
+
+                <img src="" width="60px" height="60px" id="picture"/><br />
+
+
+
+
+                <span id="patient_name" style="color: #1FBFA9;font-size: 16px;font-family: Montserrat"></span><br />
+                <span id="patient_mail" style="color: #33E2CA;font-size: 12px;font-family: monospace"></span><br /><br />
+
+                <img src="" width="60px" height="60px" id="qrImage"/><br />
+
+            </div>
+        </div><br />
+        <!--progress bar during load-->
+        <div class = "progress3">
+            <img src = "images/ajax-loader.gif" width="25px" height="25px" alt="Loading..."/>
+        </div>
+        
+        <br />
+        <div id="details">
+            Gender: <span id="patient_gender" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><br />
+            Age: <span id="patient_age" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><br />
+            Blood Group: <span id="patient_blood" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><br />
+            Address: <span id="patient_address" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><br />
+            Home phone: <span id="patient_home" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><br />
+        </div>
+
+    </div>
+</div>
+
+<script src="js/activity_patient.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

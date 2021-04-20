@@ -1,0 +1,89 @@
+body{
+  background-color: #E1FFF7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Baloo Da 2', cursive;
+}
+#toolbar{
+  position: relative;
+  vertical-align: middle;
+}
+#toolbar a:hover{
+  text-decoration: none;
+  
+}
+#top{
+  text-align: center;
+  margin-top: -28px;
+}
+
+#field{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+  text-align: center;
+  box-shadow: 3px 5px 3px #1FBFA9;
+  padding: 20px;
+  border-radius: 10px;
+}
+#picture{
+  background-position: center center;
+  border-radius: 50px;
+  border: 0.5px solid #1FBFA9;
+  margin-bottom: 3px;
+}
+#info_field{
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid #1FBFA9;
+  border-radius: 4px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#patient_id{
+  margin-top: 20px;
+  color: #1FBFA9;
+  font-family: 'Montserrat', sans-serif;
+
+}
+#progress{
+  margin-top: 15px;
+  background: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+#detail_btn{
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to right, #28AD9C, #16635B );
+  border-radius: 20px;
+  color: white;
+  border: none;
+  display: none;
+
+}
+#message{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+#status_image{
+  margin-bottom: 7px;
+}
+
+img-responsive logo{
+  float: left;
+}
+#back{
+  width: 20px;
+  height: 18px;
+  margin-left: 140px;
+  cursor: pointer;
+  margin-top:10px;
+}

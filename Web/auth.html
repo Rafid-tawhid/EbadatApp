@@ -1,0 +1,106 @@
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+  <title>Patient Authenticate</title>
+
+
+
+  <!-- Initialize jquery -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <!--bootstarp-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Initialize Firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+
+  <!--sweetalert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <!--custom javascript and css-->
+  <link rel="stylesheet" href="css/auth.css"/>
+  <script type="text/javascript" src="js/auth_patient.js"></script>
+
+</head>
+<body>
+  <div id="toolbar" class="col-xs-5 header-logo">
+    <img id="back" src="images/back.png"/>
+    <div id="top">
+      <a href="index.html">
+
+        <img src="images/iconM.png" width="35" height="35" alt="" style="margin-bottom: 10px;">
+
+        <span style="color: #1FBFA9;font-weight: bolder;font-size: 28px">Medi</span>
+        <span style="color: black;font-weight: bolder;font-size: 28px;margin-left: -3px;">Tech</span>
+
+
+        
+      </a><br>
+    </div>
+  </div>
+  <div class="card" id="field">
+    <div class="card-body">
+      <img src="" width="60px" height="60px" id="picture"/><br /><br>
+      <span>Patient ID: </span><span id="patient_id"></span><br>
+      <span id="patient_name" style="color: #1FBFA9;font-size: 16px;font-family: Montserrat"></span><br />
+      <span id="patient_address" style="color: #33E2CA;font-size: 12px;font-family: monospace"></span><br />
+
+
+
+      <div id="info_field">
+
+        Gender: <span id="patient_gender" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><br />
+
+
+        Age: <span id="patient_age" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><span style="color: #1FBFA9;font-size: 12px"> years</span><br />
+
+
+        Blood Group: <span id="patient_blood" style="color: #1FBFA9;font-size: 14px;font-family: Montserrat"></span><br />
+
+      </div>
+
+      <!--progress bar during load-->
+      <div id = "progress">
+        <img src = "images/ajax-loader.gif" width="25px" height="25px" alt="Loading..."/>
+      </div>
+
+      <br />
+      <img src="" width="50px" height="50px" id="status_image"/><br />
+      <span id="message"></span>
+      <br/><br/><br />
+      <input type="button" id="detail_btn" value="Show Patient Details" />
+
+    </div>
+  </div>
+
+
+
+  <script>
+    Swal.fire({
+      imageUrl: 'images/reader.png',
+      imageHeight: 130,
+      title: 'Scan health-card to authenticate',
+      text: 'Then explore patient information!',
+      footer: 'Thank you'
+    })
+  </script>
+</body>
+</html>

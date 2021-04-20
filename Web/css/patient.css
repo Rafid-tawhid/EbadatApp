@@ -1,0 +1,195 @@
+
+body{
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-family: 'Baloo Da 2', cursive;
+}
+
+@font-face{
+  font-family: Montserrat;
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+#logo{
+  text-align: center;
+  width: 100%;
+}
+#logo a:hover{
+  text-decoration: none;
+}
+
+.toolbar{
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to right, #64d3be , #c9feea);
+  position: relative;
+  vertical-align: middle;
+  font-family: 'Baloo Da 2', cursive;
+}
+#back{
+  width: 20px;
+  height: 18px;
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#top{
+  margin-top: -25px;
+  text-align: center;
+}
+
+
+
+.tabContainer{
+  width: 100%;
+  //height: 510px;
+  //overflow: scroll;
+}
+.tabContainer .buttonContainer{
+  height: 15%;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+
+}
+.tabContainer .buttonContainer button{
+  width: 24.97%;
+  height: 100%;
+  color: darkgrey;
+  float: left;
+  outline:none;
+  cursor: pointer;
+  font-family: 'Baloo Da 2', cursive;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  background-color: #eee;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 3px;
+  border-bottom-color: #eee;
+  box-shadow: 2px 1.5px grey;
+}
+.tabContainer .buttonContainer button:hover{
+  background-color: #d7d4d4;
+}
+.tabContainer .tabPanel{
+  background-color: #fafafa;
+  color: black;
+  //text-align: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  font-family: 'Baloo Da 2', cursive;
+  font-size: 17px;
+  display: none;
+  border: 1px solid #ccc;
+  text-align: center;
+
+}
+
+
+#patient_id,#last_update{
+  color: #1FBFA9;
+  font-family: Montserrat;
+
+}
+
+
+
+#picture{
+  border-radius: 50px;
+  border: 0.5px solid #1FBFA9;
+  margin-bottom: 3px;
+}
+#qrImage{
+  padding: 3px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#field{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%;
+  text-align: center;
+  box-shadow: 1px 2px 2.5px #1FBFA9;
+  padding: 20px;
+  border-radius: 5px;
+}
+#details{
+  text-align: left;
+  border: 1px solid #1FBFA9;
+  border-radius: 5px;
+  padding: 15px;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-family: 'Baloo Da 2', cursive;
+}
+.progress1,.progress2,.progress3{
+  text-align: center;
+}
+
+#h_field{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 15px;
+  text-align: left;
+  box-shadow: 3px 6px 3px #888888;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: serif;
+}
+
+.key{
+  color: grey;
+}
+.value{
+  font-weight: bold;
+}
+#d_name{
+  color: #1FBFA9;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#d_field{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 15px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #1FBFA9;
+  text-align: center;
+}
+#bottom{
+  margin-top: 8px;
+  background-color: #eee;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-left: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+#r_type{
+  color: #1FBFA9;
+  font-family: 'Montserrat', sans-serif;;
+}
+.h_image{
+  width: 85%;
+  height: 400px;
+  cursor: pointer;
+  transition: 0.8s;
+  border-radius: 5px;
+}
+
+.h_image:hover {opacity: 0.295;}
+

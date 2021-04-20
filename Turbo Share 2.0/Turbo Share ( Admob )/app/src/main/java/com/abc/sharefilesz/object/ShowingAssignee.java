@@ -1,0 +1,81 @@
+
+
+package com.abc.sharefilesz.object;
+
+import java.util.Locale;
+
+public class ShowingAssignee extends TransferAssignee implements Editable
+{
+    public Device device;
+    public DeviceConnection connection;
+
+    public ShowingAssignee()
+    {
+
+    }
+
+    public ShowingAssignee(long groupId, String deviceId, TransferObject.Type type)
+    {
+        super(groupId, deviceId, type);
+    }
+
+    @Override
+    public boolean applyFilter(String[] filteringKeywords)
+    {
+        return false;
+    }
+
+    @Override
+    public long getId()
+    {
+        return String.format(Locale.getDefault(), "%s_%d", deviceId, groupId).hashCode();
+    }
+
+    @Override
+    public void setId(long id)
+    {
+
+    }
+
+    @Override
+    public boolean comparisonSupported()
+    {
+        return false;
+    }
+
+    @Override
+    public String getComparableName()
+    {
+        return device.nickname;
+    }
+
+    @Override
+    public long getComparableDate()
+    {
+        return device.lastUsageTime;
+    }
+
+    @Override
+    public long getComparableSize()
+    {
+        return 0;
+    }
+
+    @Override
+    public String getSelectableTitle()
+    {
+        return device.nickname;
+    }
+
+    @Override
+    public boolean isSelectableSelected()
+    {
+        return false;
+    }
+
+    @Override
+    public boolean setSelectableSelected(boolean selected)
+    {
+        return false;
+    }
+}
