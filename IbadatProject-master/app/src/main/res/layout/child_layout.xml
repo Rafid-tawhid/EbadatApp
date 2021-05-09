@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/clicked_item"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="5dp"
+        app:cardCornerRadius="6dp"
+        >
+        <TextView
+            android:textDirection="inherit"
+            android:id="@+id/childTextViewId"
+            android:background="#181818"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textColor="#FDCA85"
+            android:paddingLeft="?android:expandableListPreferredChildPaddingLeft"
+            android:text="A Demo test Code is a special 30 day code available for free from ACP that will provide full functionality for ThinManager. The purpose of a De code is to provide an evaluation period so you can see the features and benefits of the fully array of ThinManager features."
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
