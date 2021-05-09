@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#250000"
+    android:orientation="vertical"
+    tools:context=".NamesFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/up"
+        android:background="@drawable/up2"
+        android:scaleType="fitCenter"
+
+        ></ImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="3dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/item_bg2"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_margin="5dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="5dp"
+                    android:background="@null"
+                    app:cardCornerRadius="4dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+                        android:background="#28272C"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="33dp"
+                            android:src="@drawable/name1"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textColor="#FDCA85"
+                            android:text="আল্লাহু"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            ></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                            android:textColor="#ffff"
+                            android:textAlignment="center"
+                            android:textSize="14dp"></TextView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="5dp"
+                    android:background="@null"
+                    app:cardCornerRadius="4dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+                        android:background="#28272C"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="33dp"
+                            android:src="@drawable/name1"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textColor="#FDCA85"
+                            android:text="আল্লাহু"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            ></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                            android:textColor="#ffff"
+                            android:textAlignment="center"
+                            android:textSize="14dp"></TextView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:padding="5dp"
+                    android:background="@null"
+                    app:cardCornerRadius="4dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+                        android:background="#28272C"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="33dp"
+                            android:src="@drawable/name1"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textColor="#FDCA85"
+                            android:text="আল্লাহু"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            ></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                            android:textColor="#ffff"
+                            android:textAlignment="center"
+                            android:textSize="14dp"></TextView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:padding="5dp"
+                android:background="@null"
+                app:cardCornerRadius="4dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:background="#28272C"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/name1"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#FDCA85"
+                        android:text="আল্লাহু"
+                        android:fontFamily="@font/hind_siliguri_semibold"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="যিনি ব্যতীত আর কোন ইলাহ নেই"
+
+                        android:textColor="#ffff"
+                        android:textAlignment="center"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

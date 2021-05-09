@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  android:background="#000000"
+    android:id="@+id/bg"
+    tools:context=".MainActivity">
+
+  <com.google.android.material.bottomappbar.BottomAppBar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/bottom_app_bar"
+     app:fabCradleMargin="12dp"
+      app:backgroundTint="#F8A349"
+      android:background="#F8A349"
+      app:fabCradleVerticalOffset="10dp"
+      app:fabCradleRoundedCornerRadius="16dp"
+    android:layout_gravity="bottom"
+    >
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_nav"
+        app:backgroundTint="#F8A349"
+        app:itemIconTint="#181818"
+
+        app:itemTextColor="#181818"
+        android:layout_marginEnd="16dp"
+        android:layout_height="match_parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+  </com.google.android.material.bottomappbar.BottomAppBar>
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/fab"
+      app:borderWidth="2dp"
+
+      android:backgroundTint="#181818"
+      app:backgroundTint="#F8A349"
+      android:src="@drawable/home_ic"
+      app:tint="#F8A349"
+    app:layout_anchor="@id/bottom_app_bar">
+
+  </com.google.android.material.floatingactionbutton.FloatingActionButton>
+  <androidx.drawerlayout.widget.DrawerLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:id="@+id/drawer_layout"
+      android:layout_height="match_parent"
+      tools:openDrawer="start"
+      android:layout_marginBottom="50dp"
+      tools:context=".Activity.MainActivity">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:background="#131418"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_toolbar"
+        app:itemIconTint="#FDCA85"
+        app:itemTextColor="#FDCA85"
+        android:layout_gravity="start"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+
+<!--        >-->
+
+<!--      <LinearLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="30dp"-->
+<!--          android:weightSum="6"-->
+<!--          android:layout_marginLeft="5dp"-->
+<!--          android:layout_marginTop="10dp"-->
+<!--          android:orientation="horizontal">-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            app:titleTextColor="#FDCA85"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_fragment"
+      android:orientation="vertical"
+      android:layout_marginBottom="-30dp"
+      >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:id="@+id/frame_id"
+    android:layout_marginBottom="-30dp"
+  >
+
+</FrameLayout>
+    </LinearLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/searchView_main"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="5"-->
+<!--            android:clickable="true"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="22dp"-->
+<!--            android:paddingRight="26dp"-->
+<!--            android:fontFamily="@font/aclonica"-->
+<!--            android:keepScreenOn="false"-->
+<!--            android:text="Blood Bank"-->
+<!--            android:textColor="#FF0101"-->
+
+
+<!--            app:queryHint="Search">-->
+
+<!--        </TextView>-->
+
+
+<!--      </LinearLayout>-->
+
+<!--      <LinearLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="match_parent"-->
+<!--          android:orientation="vertical"-->
+<!--          android:weightSum="7"-->
+<!--          android:background="@drawable/main_bg"-->
+<!--          android:layout_marginTop="10dp"-->
+<!--          android:paddingTop="40dp"-->
+<!--          android:layout_marginRight="5dp"-->
+<!--          android:layout_marginLeft="5dp"-->
+<!--          >-->
+<!--        <GridLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight=".5"-->
+
+
+<!--            >-->
+<!--          <androidx.cardview.widget.CardView android:layout_height="120dp"-->
+<!--              android:layout_width="0dp"-->
+<!--              android:layout_columnWeight="1"-->
+<!--              android:layout_margin="10dp"-->
+<!--              app:cardCornerRadius="15dp"-->
+<!--              android:background="#673AB7"-->
+
+<!--              >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_margin="5dp"-->
+
+<!--                >-->
+<!--              <ImageView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="match_parent"-->
+<!--                  android:src="@drawable/searchblood"-->
+<!--                  android:padding="20dp"-->
+<!--                  android:layout_marginBottom="13dp"-->
+<!--                  android:layout_marginLeft="5dp"-->
+<!--                  android:layout_marginTop="5dp"-->
+<!--                  android:layout_marginRight="5dp"-->
+
+<!--                  >-->
+
+<!--              </ImageView>-->
+<!--              <TextView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="wrap_content"-->
+<!--                  android:text="Search blood"-->
+<!--                  android:gravity="center"-->
+<!--                  android:layout_alignParentBottom="true"-->
+<!--                  android:textColor="#FF0000"-->
+<!--                  android:fontFamily="@font/aclonica"-->
+<!--                  ></TextView>-->
+<!--            </RelativeLayout>-->
+
+<!--          </androidx.cardview.widget.CardView>-->
+<!--          <androidx.cardview.widget.CardView android:layout_height="120dp"-->
+<!--              android:layout_width="0dp"-->
+<!--              android:layout_columnWeight="1"-->
+<!--              android:layout_margin="10dp"-->
+<!--              android:background="#E040FB"-->
+<!--              app:cardCornerRadius="15dp"-->
+
+<!--              >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_margin="5dp"-->
+
+<!--                >-->
+<!--              <ImageView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="match_parent"-->
+<!--                  android:src="@drawable/donor"-->
+<!--                  android:padding="20dp"-->
+<!--                  android:layout_marginBottom="13dp"-->
+<!--                  android:layout_marginLeft="5dp"-->
+<!--                  android:layout_marginTop="5dp"-->
+<!--                  android:layout_marginRight="5dp"-->
+
+<!--                  >-->
+
+<!--              </ImageView>-->
+<!--              <TextView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="wrap_content"-->
+<!--                  android:text="Become a donor"-->
+<!--                  android:gravity="center"-->
+<!--                  android:layout_alignParentBottom="true"-->
+<!--                  android:textColor="#FF0000"-->
+<!--                  android:fontFamily="@font/aclonica"-->
+<!--                  ></TextView>-->
+<!--            </RelativeLayout>-->
+
+<!--          </androidx.cardview.widget.CardView>-->
+<!--          <androidx.cardview.widget.CardView android:layout_height="120dp"-->
+<!--              android:layout_width="0dp"-->
+<!--              android:layout_columnWeight="1"-->
+<!--              android:layout_margin="10dp"-->
+<!--              app:cardCornerRadius="15dp"-->
+<!--              android:background="#40C4FF"-->
+
+<!--              >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_margin="5dp"-->
+
+<!--                >-->
+<!--              <ImageView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="match_parent"-->
+<!--                  android:src="@drawable/blog"-->
+<!--                  android:padding="20dp"-->
+<!--                  android:layout_marginBottom="13dp"-->
+<!--                  android:layout_marginLeft="5dp"-->
+<!--                  android:layout_marginTop="5dp"-->
+<!--                  android:layout_marginRight="5dp"-->
+
+<!--                  >-->
+
+<!--              </ImageView>-->
+<!--              <TextView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="wrap_content"-->
+<!--                  android:text="Daily blog"-->
+<!--                  android:gravity="center"-->
+<!--                  android:layout_alignParentBottom="true"-->
+<!--                  android:textColor="#FF0000"-->
+<!--                  android:fontFamily="@font/aclonica"-->
+<!--                  ></TextView>-->
+<!--            </RelativeLayout>-->
+
+
+<!--          </androidx.cardview.widget.CardView>-->
+<!--        </GridLayout>-->
+<!--        <GridLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight=".5"-->
+
+
+<!--            >-->
+<!--          <androidx.cardview.widget.CardView-->
+<!--              android:layout_height="120dp"-->
+<!--              android:layout_width="0dp"-->
+<!--              android:layout_columnWeight="1"-->
+<!--              android:layout_margin="10dp"-->
+<!--              app:cardCornerRadius="15dp"-->
+<!--              android:background="#673AB7"-->
+
+<!--              >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_margin="5dp"-->
+
+<!--                >-->
+<!--              <ImageView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="match_parent"-->
+<!--                  android:src="@drawable/contact"-->
+<!--                  android:padding="20dp"-->
+<!--                  android:layout_marginBottom="13dp"-->
+<!--                  android:layout_marginLeft="5dp"-->
+<!--                  android:layout_marginTop="5dp"-->
+<!--                  android:layout_marginRight="5dp"-->
+
+<!--                  >-->
+
+<!--              </ImageView>-->
+<!--              <TextView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="wrap_content"-->
+<!--                  android:text="Contact       Us "-->
+<!--                  android:gravity="center"-->
+<!--                  android:layout_alignParentBottom="true"-->
+<!--                  android:textColor="#FF0000"-->
+<!--                  android:fontFamily="@font/aclonica"-->
+<!--                  ></TextView>-->
+<!--            </RelativeLayout>-->
+
+<!--          </androidx.cardview.widget.CardView>-->
+<!--          <androidx.cardview.widget.CardView android:layout_height="120dp"-->
+<!--              android:layout_width="0dp"-->
+<!--              android:layout_columnWeight="1"-->
+<!--              android:layout_margin="10dp"-->
+<!--              android:background="#E040FB"-->
+<!--              app:cardCornerRadius="15dp"-->
+
+<!--              >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_margin="5dp"-->
+
+<!--                >-->
+<!--              <ImageView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="match_parent"-->
+<!--                  android:src="@drawable/bloodreq"-->
+<!--                  android:padding="20dp"-->
+<!--                  android:layout_marginBottom="13dp"-->
+<!--                  android:layout_marginLeft="5dp"-->
+<!--                  android:layout_marginTop="5dp"-->
+<!--                  android:layout_marginRight="5dp"-->
+
+<!--                  >-->
+
+<!--              </ImageView>-->
+<!--              <TextView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="wrap_content"-->
+<!--                  android:text="Blood Request"-->
+<!--                  android:gravity="center"-->
+<!--                  android:layout_alignParentBottom="true"-->
+<!--                  android:textColor="#FF0000"-->
+<!--                  android:fontFamily="@font/aclonica"-->
+<!--                  ></TextView>-->
+<!--            </RelativeLayout>-->
+
+<!--          </androidx.cardview.widget.CardView>-->
+<!--          <androidx.cardview.widget.CardView android:layout_height="120dp"-->
+<!--              android:layout_width="0dp"-->
+<!--              android:layout_columnWeight="1"-->
+<!--              android:layout_margin="10dp"-->
+<!--              app:cardCornerRadius="15dp"-->
+<!--              android:background="#40C4FF"-->
+
+<!--              >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_margin="5dp"-->
+
+<!--                >-->
+<!--              <ImageView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="match_parent"-->
+<!--                  android:src="@drawable/about"-->
+<!--                  android:padding="20dp"-->
+<!--                  android:layout_marginBottom="13dp"-->
+<!--                  android:layout_marginLeft="5dp"-->
+<!--                  android:layout_marginTop="5dp"-->
+<!--                  android:layout_marginRight="5dp"-->
+
+<!--                  >-->
+
+<!--              </ImageView>-->
+<!--              <TextView-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="wrap_content"-->
+<!--                  android:text="About          Us"-->
+<!--                  android:gravity="center"-->
+<!--                  android:layout_alignParentBottom="true"-->
+<!--                  android:textColor="#FF0000"-->
+<!--                  android:fontFamily="@font/aclonica"-->
+<!--                  ></TextView>-->
+<!--            </RelativeLayout>-->
+
+
+<!--          </androidx.cardview.widget.CardView>-->
+<!--        </GridLayout>-->
+<!--      </LinearLayout>-->
+
+  </androidx.drawerlayout.widget.DrawerLayout>
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>

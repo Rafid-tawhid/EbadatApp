@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IbadatProject</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment </string>
+    <string-array name="list_header">
+        <item> ১. কালেমা শাহাদাত</item>
+        <item> ২. কালেমা তাইয়্যেবা</item>
+        <item> ৩. কালেমা তামজীদ</item>
+        <item> ৪. কালেমা রদ্দে কুফর</item>
+
+
+    </string-array>
+    <string-array name="list_child">
+
+        <item>আশ্হাদু আল-লা-ইলা-হা ইল্লাল্লা-হু ওয়াহ্দাহু-লা-শারীকালাহু ওয়া আম্হাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসূলুহু। </item>
+        <item> Laaa Ilaaha Illa-llaahu Muhammadur-Rasoolu-llaah </item>
+        <item> Subhaana-llaahi Walhamdu Lillaahi Walaaa Ilaaha Illa-llaahu Wallaahu Akbar. Walaa Hawla Walaa Quwwata Illaa Billaahi-l ‘Aliyyil ‘Azeem </item>
+        <item> আল্লাহুম্মা ইন্নী আউযুবিকা মিন আন উশরিকা বিকা শাইআও ওয়া আনা আলামু বিহি ওয়া আসতাগ ফিরুকা লিমা আলামু বিহি ওয়ামা লা আলামু বিহি তুবতু আনহু ওয়া তাবাররাতু মিনাল কুফরি ওয়াশ্শির্কি ওয়াল মা আছি কুল্লিহা ওয়া আসলামতু ওয়া আমানতু ওয়া আক্কলু আল্লা ইলাহা ইল্লাল্লাহু মুহাম্মাদু রাসূলুল্লাহ</item>
+
+        <item>
+            <string-array name="child">
+                <item>This is child1\n\n</item>
+                <item> This is child2\n\n</item>
+                <item> This is child3\n\n</item>
+            </string-array>
+
+        </item>
+    </string-array>
+</resources>
