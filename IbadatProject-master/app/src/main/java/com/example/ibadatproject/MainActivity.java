@@ -60,11 +60,10 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.loop:
-                        SearchFragment searchFragmentFragment=new SearchFragment();
+                        CompasFragment searchFragmentFragment=new CompasFragment();
                         FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
                         transaction.replace(R.id.frame_id,searchFragmentFragment);
                         transaction.commit();
-
 
                         return true;
                     case R.id.home:
@@ -84,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         FragmentTransaction transaction4=getSupportFragmentManager().beginTransaction();
                         transaction4.replace(R.id.frame_id,menuFragment);
                         transaction4.commit();
-                        Log.d("aa", String.valueOf("hello"+transaction4));
+
                         return true;
                 }
 
@@ -133,7 +132,5 @@ public class MainActivity extends AppCompatActivity {
         navigationView.bringToFront();
 
     }
-
-
 
 }
